@@ -1,0 +1,13 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.lang.terraform",
+    "lazyvim.plugins.extras.lang.tex",
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.lang.yaml"
+  ],
+  "news": {
+    "NEWS.md": "7429",
+    "doc/news.txt": "24450"
+  },
+  "version": 7
+}
