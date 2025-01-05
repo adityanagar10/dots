@@ -3,7 +3,7 @@ return {
   dependencies = {
     { "hrsh7th/nvim-cmp" },
     { "nvim-treesitter/nvim-treesitter" },
-    { "ray-x/guihua.lua", run = "cd lua/fzy && make" },
+    { "ray-x/guihua.lua",               run = "cd lua/fzy && make" },
     {
       "ray-x/go.nvim",
       event = { "CmdlineEnter" },
@@ -35,8 +35,8 @@ return {
         vim.api.nvim_buf_set_keymap(0, "n", "<C-c>", ":GoCoverage -p<CR>", {})
 
         -- Opens test files
-        vim.api.nvim_buf_set_keymap(0, "n", "A", ":lua require('go.alternate').switch(true, '')<CR>", {}) -- Test
-        vim.api.nvim_buf_set_keymap(0, "n", "V", ":lua require('go.alternate').switch(true, 'vsplit')<CR>", {}) -- Test Vertical
+        -- vim.api.nvim_buf_set_keymap(0, "n", "A", ":lua require('go.alternate').switch(true, '')<CR>", {}) -- Test
+        -- vim.api.nvim_buf_set_keymap(0, "n", "V", ":lua require('go.alternate').switch(true, 'vsplit')<CR>", {}) -- Test Vertical
         -- vim.api.nvim_buf_set_keymap(0, "n", "S", ":lua require('go.alternate').switch(true, 'split')<CR>", {}) -- Test Split
       end,
       group = vim.api.nvim_create_augroup("go_autocommands", { clear = true }),
