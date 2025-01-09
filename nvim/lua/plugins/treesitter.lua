@@ -18,7 +18,7 @@ return {
       indent = { enable = true },
       -- enable autotagging (w/ nvim-ts-autotag plugin)
       autotag = {
-        enable = true,
+        enable = false,
       },
       -- ensure these language parsers are installed
       ensure_installed = {

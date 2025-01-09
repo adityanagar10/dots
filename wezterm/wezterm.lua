@@ -37,7 +37,7 @@ config.keys = {
 
 -- Configs
 -- Add Custom Color Scheme
-config.color_scheme = "rose-pine"
+config.color_scheme = "Catppuccin Mocha"
 config.colors = {
   -- background = "#12151B", -- lighter gray
   -- background = "#0D0D0D", -- darker gray
