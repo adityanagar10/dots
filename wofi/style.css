@@ -1,0 +1,94 @@
+/* Wofi styling with your color palette */
+
+window {
+    margin: 0px;
+    border: 2px solid #c35b54;
+    background-color: #2b3334;
+    border-radius: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+}
+
+#input {
+    margin: 8px;
+    padding: 12px 16px;
+    border: 1px solid #3f353d;
+    color: #c35b54;
+    background-color: #2b3334;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#input:focus {
+    border: 1px solid #c35b54;
+    outline: none;
+}
+
+#inner-box {
+    margin: 8px;
+    border: none;
+    background-color: #2b3334;
+    border-radius: 8px;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    background-color: #2b3334;
+    border-radius: 8px;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #c35b54;
+    animation: none;
+}
+
+#text:selected {
+    color: #2b3334;
+}
+
+#entry {
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    animation: none;
+}
+
+#entry:selected {
+    background-color: #c35b54;
+    border-radius: 6px;
+}
+
+#entry:hover {
+    background-color: #994b52;
+    border-radius: 6px;
+}
+
+#entry:selected #text {
+    color: #2b3334;
+}
+
+#entry:hover #text {
+    color: #2b3334;
+}
+
+/* Icons */
+#img {
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+/* No results text */
+#no-results {
+    color: #5a3a44;
+    font-style: italic;
+}
