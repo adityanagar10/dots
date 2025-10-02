@@ -1,14 +1,39 @@
 return {
+  {
+    "dasupradyumna/midnight.nvim",
+    lazy = true,
+    priority = 999,
+    config = function()
+      vim.cmd.colorscheme("midnight")
+    end,
+  },
+  {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = true,
+    priority = 999,
+    opts = function()
+      return {
+        transparent = true,
+      }
+    end,
+  },
   { "vim-scripts/newsprint.vim" },
   { "gbprod/nord.nvim" },
-  { "slugbyte/lackluster.nvim", },
-  { "vim-scripts/zenesque.vim", },
-  { "jaredgorski/fogbell.vim", },
-  { "oahlen/iceberg.nvim", },
-  { "Skardyy/makurai-nvim", },
+  { "slugbyte/lackluster.nvim" },
+  { "vim-scripts/zenesque.vim" },
+  { "jaredgorski/fogbell.vim" },
+  { "oahlen/iceberg.nvim" },
+  { "Skardyy/makurai-nvim" },
   { "ellisonleao/gruvbox.nvim" },
-  { "jnurmine/Zenburn", },
-  { "RRethy/base16-nvim", },
+  { "jnurmine/Zenburn" },
+  { 
+    "RRethy/base16-nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("base16-black-metal")
+    end,
+  },
   {
     "sainnhe/gruvbox-material",
     config = function()

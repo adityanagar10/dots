@@ -1,0 +1,19 @@
+# Ghostty Configuration
+
+# Font Configuration
+font-size = 20
+
+# Theme
+theme = Argonaut
+
+# Window Configuration
+window-padding-x = 10
+window-padding-y = 10
+background-opacity = 0.965
+
+# Mouse
+copy-on-select = true
+
+# macOS specific
+macos-option-as-alt = true
+macos-titlebar-style = transparent
