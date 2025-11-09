@@ -10,7 +10,7 @@ return {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make",
         config = function()
-          -- require("telescope").load_extension("fzf")
+          require("telescope").load_extension("fzf")
         end
         -- build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
       },
@@ -56,7 +56,7 @@ return {
         },
       })
 
-      -- require("telescope").load_extension("fzf")
+      require("telescope").load_extension("fzf")
       require("telescope").load_extension("zoxide")
       -- telescope setup
       local builtin = require("telescope.builtin")
@@ -73,6 +73,7 @@ return {
       vim.keymap.set("n", "<leader>ds", builtin.lsp_document_symbols, {})
       vim.keymap.set("n", "<leader>ws", builtin.lsp_workspace_symbols, {})
       vim.keymap.set("n", "<leader>fz", ":Telescope zoxide list<CR>", {})
+      vim.keymap.set("n", "<leader>fr", builtin.oldfiles, {})
       vim.keymap.set("n", "<leader>fv", builtin.help_tags, {})
     end,
   },

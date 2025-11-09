@@ -28,6 +28,9 @@ km("n", "<leader>t", "bv~")
 -- colorscheme picker
 km("n", "<C-n>", ":Telescope colorscheme<CR>")
 
+-- clear search highlights
+km("n", "<Esc>", ":nohlsearch<CR>", { silent = true })
+
 
 km("n", "<C-d>", "<C-d>zz")
 km("n", "<C-u>", "<C-u>zz")
