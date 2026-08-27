@@ -5,3 +5,4 @@ configstore/*
 .DS_Store
 zed/*
 wezterm/.DS_Store
+secrets.zsh
