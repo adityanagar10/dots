@@ -24,8 +24,8 @@ brew install sesh lazygit k9s starship fzf direnv zoxide fd \
   font-jetbrains-mono-nerd-font font-iosevka-nerd-font font-hack-nerd-font
 
 echo "==> Installing tmux plugin manager (tpm)"
-if [ ! -d "$HOME/.config/tmux/plugins/tpm" ]; then
-  git clone https://github.com/tmux-plugins/tpm "$HOME/.config/tmux/plugins/tpm"
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 else
   echo "  ok: tpm already cloned"
 fi
