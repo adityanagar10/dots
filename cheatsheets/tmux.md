@@ -15,6 +15,9 @@
 - `prefix o` — sessionx picker
 - `prefix d` — detach
 
+## Windows
+- `prefix ,` — rename current window
+
 ## Agent workflow (this setup)
 - `prefix A` — new agent: prompts for branch name, creates a git worktree,
   opens a tmux session there, launches `claude`

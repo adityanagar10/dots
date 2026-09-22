@@ -83,6 +83,9 @@ km("i", "<C-l>", "<C-x><C-l>", { noremap = true, silent = true })
 km("n", "<leader>ll", ":setlocal spell spelllang=en_us<CR>")
 
 -- lsp setup
+km("n", "<leader>i", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "Toggle inlay hints" })
 km("n", "K", vim.lsp.buf.hover)
 km("n", "gd", function()
   vim.lsp.buf.definition()
