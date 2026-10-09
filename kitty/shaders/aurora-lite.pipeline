@@ -1,0 +1,27 @@
+# northern-lights with a lower frame rate (100ms = 10fps) to cut GPU load.
+# Same passes as the shipped pipeline; only animation_step is added.
+textures a persist
+
+startgroup
+    animation_start os-window-focus-in | user-activity
+    animation_stop os-window-focus-out | user-idle
+    animation_step 100
+    var int STAGE = 0
+    shaders northern-lights
+    output_texture a
+endgroup
+
+startgroup
+    attach
+    animation_step 100
+    var int STAGE = 1
+    shaders northern-lights
+    output_texture persist
+endgroup
+
+startgroup
+    attach
+    animation_step 100
+    var int STAGE = 2
+    shaders northern-lights
+endgroup

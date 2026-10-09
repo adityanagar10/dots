@@ -1,0 +1,60 @@
+# By default Reload config with shft + cmd + ,
+# config-file = themes/rosepine
+theme = Everforest Dark Hard
+background-opacity = 0.88
+background-blur-radius = 25
+
+# Matches kitty (font_family / font_size / modify_font cell_width 95%)
+# font-family = JetBrainsMonoNL Nerd Font
+# font-feature = -liga,-calt,-dlig
+font-family = Comic Code Ligatures
+font-size = 12
+adjust-cell-width = -5%
+# Comic Code has a 550-unit lineGap (55% of the em); Ghostty adds it to
+# every line. -30% removes most of it (1000/1550 ≈ 65%).
+adjust-cell-height = -30%
+cursor-style = block
+cursor-style-blink = false
+cursor-color = cell-foreground
+cursor-text = cell-background
+unfocused-split-opacity = 0.55
+split-divider-color = #524f67
+
+# macos-titlebar-style = hidden
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+
+confirm-close-surface = false
+window-decoration = auto
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+
+auto-update = check
+auto-update-channel = stable
+
+# extras
+shell-integration-features = no-cursor
+copy-on-select = clipboard
+# cmd or alt c copy (not vim yank)
+
+# Custom Keybinds & Config (super = cmd key on mac)
+# For Simple Keybinds
+keybind = ctrl+bracket_left=text:\x1b
+keybind = super+i=inspector:toggle
+keybind = ctrl+space>[=reload_config
+
+#-------------------------------------------
+
+# Similar to Tmux Panes (no sessions)
+# this only works if you have `macos-titlebar-style = tabs or native or transparent` else it behaves like new window
+keybind = ctrl+space>c=new_tab
+keybind = ctrl+space>n=new_window
+keybind = ctrl+space>x=close_surface
+
+# tab nav, splitting, and split nav removed — conflicted with tmux's
+# Ctrl-Space prefix (window select 1-9, and h/j/k/l pane nav)
+
+#Shaders
+# custom-shader = shaders/bettercrt.glsl
+# custom-shader = shaders/retro-terminal.glsl
